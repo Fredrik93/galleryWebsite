@@ -1,0 +1,24 @@
+<% include ./partials/header %> 
+
+
+<%   if(!currentUser){ %>
+
+    <ul class="nav-item">
+           
+                <h2> Please log in as admin to sign up new users </h2>
+                <p> </p>
+                <a id="login" class="nav-link" href="/login">
+              <h2> Log In  </h2>
+            </a>
+        </ul>
+          <%   }else{ %>
+
+<form action="/register" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <button>Sign Up User</button>
+</form>
+
+
+<%   } %>
+<% include ./partials/footer %> 

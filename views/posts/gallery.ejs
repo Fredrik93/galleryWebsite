@@ -1,0 +1,26 @@
+
+<title>Gallery</title>
+<h1 id="headerText" > Mia Johannesson  <p id="headerText" >Photography</p>  </h1>
+
+<img id="galleryHeader" src="https://scontent.fgse1-1.fna.fbcdn.net/v/t31.0-8/965443_4704531951727_1949553068_o.jpg?_nc_cat=111&_nc_oc=AQn8ADbYh0Nh61TrEN73SfKUe7GY8kidl599KQvljx_EnIa1illvDGnjEp7wI1P3j48&_nc_ht=scontent.fgse1-1.fna&oh=0f5f735d786a5125fb38f7ef318ac1a1&oe=5DE10561" alt="Header Image">
+
+<% include ../partials/header.ejs %>
+
+
+<div class="container">
+    <% posts.reverse() %>
+    <% posts.forEach(function(posts){ %>
+  
+      <img alt="Responsive image" class="img-fluid rounded mx-auto d-block" src="<%= posts.image %>">
+      <p class="text-center"><%= posts.description.substring(0,400) %>...</p>
+      <p>
+
+<div class="text-center">
+          <a href="/posts/<%= posts._id %>" class="ui md basic blue button" >More Info</a></div>
+      </p>
+   </div>
+    </div>
+   
+  <% }); %>
+</div>
+<% include ../partials/footer.ejs %>

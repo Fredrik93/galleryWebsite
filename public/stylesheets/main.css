@@ -1,0 +1,116 @@
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(0, 0, 0);
+} 
+#navbar{
+    font-family: 'Dancing Script', cursive;
+}
+
+#drop_zone {
+    border: 5px solid blue;
+    width:  200px;
+    height: 100px;
+  }
+#headerText{
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    z-index: 999;
+    margin: 0.5em auto;
+    left: 0;
+    right: 0;
+    top: 5%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; 
+    font-size: 2em;
+    
+     
+
+
+
+}
+#galleryHeader{
+  
+    display: table-header-group; 
+    position: relative;
+    height: 30%;
+    width: 100%
+}
+.img-fluid{ 
+
+    margin-top: 10em;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid black;
+    padding: 0.2em;
+    
+}
+
+
+
+li {
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+}
+
+#navbarmenu h1{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+
+#posts{
+    border: 5px solid black;
+    
+}
+
+.row p{
+    margin-top: 2em;
+    text-align: center;
+}
+
+h2 a{
+    color:black;
+    font-family: 'Dancing Script', cursive;
+}
+h2{
+    color:black;
+    font-family: 'Dancing Script', cursive;
+}
+.text-center{
+ margin-top: 2em;
+}
+
+#aboutme {
+  width: auto;
+  height: 70%;
+  border: 1px solid black;
+  padding: 0.4em;
+  margin-top: 1em;
+
+    
+}
+
+#aboutH1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+   margin-top: 2em;
+   margin-left: 30%
+}
+#aboutText{
+    text-align: center;
+    padding: 2em;
+}
+
+
+
+/* supposedly this makes the phone version better scaled.  */
+.container-fluid{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2cm;
+}
